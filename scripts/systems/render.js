@@ -5,6 +5,8 @@ function clearCanvas() {
 ECS.systems.render = function (entities) {
     let currentEntity, fillStyle;
 
+    clearCanvas();
+
     for (let entityID in entities) {
         currentEntity = entities[entityID];
 

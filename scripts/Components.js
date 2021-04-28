@@ -21,6 +21,7 @@ ECS.Components.Position = function (params) {
 
     this.x = params.x || 20 + (Math.random() * (ECS.$canvas.width - 20) | 0);
     this.y = params.y || 20 + (Math.random() * (ECS.$canvas.height - 20) | 0);
+    this.random = params.random || false;
 
     this.name = 'position';
     return this;
