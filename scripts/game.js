@@ -7,7 +7,15 @@ ECS.Game = function () {
         entity = new ECS.Entity();
         entity.addComponent(new ECS.Components.Appearance());
 
-        entity.addComponent(new ECS.Components.Position());
+        let params = {};
+
+        if (Math.random() > 0.5){
+            console.log('Test');
+            entity.addComponent(new ECS.Components.Mass());
+        }
+
+        entity.addComponent(new ECS.Components.Position(params));
+
         ECS.entities[entity.id] = entity;
 
     }
@@ -21,20 +29,21 @@ ECS.Game = function () {
         }
     }));
 
-    entity.addComponent(new ECS.Components.Position({
-        random: true
-    }));
+    entity.addComponent(new ECS.Components.Position());
+    entity.addComponent(new ECS.Components.PlayerControlled());
+    entity.addComponent(new ECS.Components.RandomMovement());
+    entity.addComponent(new ECS.Components.Mass());
     ECS.entities[entity.id] = entity;
 
     let systems = [
         ECS.systems.gravity,
         ECS.systems.randomMovement,
-        ECS.systems.render
+        ECS.systems.userInput,
+        ECS.systems.render,
     ];
 
 
     function gameLoop() {
-
 
         for (let i = 0; i < systems.length; i++) {
             systems[i](ECS.entities);
@@ -43,6 +52,7 @@ ECS.Game = function () {
         if (self._running)
             requestAnimationFrame(gameLoop);
     }
+
     this._running = true;
 
     console.log('Game loop starting.');

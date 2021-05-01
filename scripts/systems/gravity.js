@@ -6,7 +6,7 @@ ECS.systems.gravity = function (entities) {
     for (let entityID in entities) {
         currentEntity = entities[entityID];
 
-        if (currentEntity.components.position) {
+        if (currentEntity.components.mass) {
             dx = cx - currentEntity.components.position.x;
             dy = cy - currentEntity.components.position.y;
 
@@ -15,6 +15,7 @@ ECS.systems.gravity = function (entities) {
 
             currentEntity.components.position.x += dx;
             currentEntity.components.position.y += dy;
+
         }
     }
 }

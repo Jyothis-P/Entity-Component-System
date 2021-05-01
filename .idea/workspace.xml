@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544a9bf7-c0bc-4533-9d84-85ec74e6539a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/systems/gravity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/systems/randomMovement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/systems/userInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/Components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/systems/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/gravity.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/gravity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/systems/randomMovement.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/systems/randomMovement.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +53,26 @@
       <workItem from="1619468903113" duration="581000" />
       <workItem from="1619469698746" duration="4579000" />
       <workItem from="1619613742659" duration="13390000" />
+      <workItem from="1619677145772" duration="2394000" />
+      <workItem from="1619761466822" duration="590000" />
+      <workItem from="1619762969829" duration="4941000" />
+      <workItem from="1619875890281" duration="838000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
